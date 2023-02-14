@@ -11,6 +11,10 @@
 		65FD2D29299C1E7A001F8363 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD2D28299C1E7A001F8363 /* ContentView.swift */; };
 		65FD2D2B299C1E7B001F8363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FD2D2A299C1E7B001F8363 /* Assets.xcassets */; };
 		65FD2D2E299C1E7B001F8363 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FD2D2D299C1E7B001F8363 /* Preview Assets.xcassets */; };
+		65FD2D38299C234C001F8363 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 65FD2D36299C234C001F8363 /* success.m4a */; };
+		65FD2D39299C234C001F8363 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65FD2D37299C234C001F8363 /* chimeup.mp3 */; };
+		65FD2D40299C2AC2001F8363 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD2D3F299C2AC2001F8363 /* OnboardingView.swift */; };
+		65FD2D42299C2AF6001F8363 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD2D41299C2AF6001F8363 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		65FD2D28299C1E7A001F8363 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65FD2D2A299C1E7B001F8363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65FD2D2D299C1E7B001F8363 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65FD2D36299C234C001F8363 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		65FD2D37299C234C001F8363 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		65FD2D3E299C2961001F8363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		65FD2D3F299C2AC2001F8363 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		65FD2D41299C2AF6001F8363 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,12 @@
 		65FD2D25299C1E7A001F8363 /* Restart */ = {
 			isa = PBXGroup;
 			children = (
+				65FD2D3E299C2961001F8363 /* Info.plist */,
+				65FD2D3D299C26C1001F8363 /* Utilities */,
+				65FD2D3C299C2684001F8363 /* Views */,
+				65FD2D3A299C2355001F8363 /* Sounds */,
 				65FD2D26299C1E7A001F8363 /* RestartApp.swift */,
-				65FD2D28299C1E7A001F8363 /* ContentView.swift */,
+				65FD2D3B299C2671001F8363 /* Screens */,
 				65FD2D2A299C1E7B001F8363 /* Assets.xcassets */,
 				65FD2D2C299C1E7B001F8363 /* Preview Content */,
 			);
@@ -65,6 +78,39 @@
 				65FD2D2D299C1E7B001F8363 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65FD2D3A299C2355001F8363 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				65FD2D37299C234C001F8363 /* chimeup.mp3 */,
+				65FD2D36299C234C001F8363 /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		65FD2D3B299C2671001F8363 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				65FD2D28299C1E7A001F8363 /* ContentView.swift */,
+				65FD2D3F299C2AC2001F8363 /* OnboardingView.swift */,
+				65FD2D41299C2AF6001F8363 /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		65FD2D3C299C2684001F8363 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65FD2D3D299C26C1001F8363 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +171,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FD2D39299C234C001F8363 /* chimeup.mp3 in Resources */,
 				65FD2D2E299C1E7B001F8363 /* Preview Assets.xcassets in Resources */,
+				65FD2D38299C234C001F8363 /* success.m4a in Resources */,
 				65FD2D2B299C1E7B001F8363 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +185,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FD2D40299C2AC2001F8363 /* OnboardingView.swift in Sources */,
+				65FD2D42299C2AF6001F8363 /* HomeView.swift in Sources */,
 				65FD2D29299C1E7A001F8363 /* ContentView.swift in Sources */,
 				65FD2D27299C1E7A001F8363 /* RestartApp.swift in Sources */,
 			);
@@ -270,11 +320,11 @@
 				DEVELOPMENT_TEAM = ZHGS3G8B6U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Restart/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +349,11 @@
 				DEVELOPMENT_TEAM = ZHGS3G8B6U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Restart/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
