@@ -17,6 +17,8 @@ struct OnboardingView: View {
     
     var body: some View {
         ZStack {
+            
+            
             Color ("ColorBlue").ignoresSafeArea(.all, edges: .all)
             
             VStack (spacing: 20) {
@@ -31,7 +33,7 @@ struct OnboardingView: View {
                         .foregroundColor(.white)
                 Text("""
     It's not how much we give,
-    but how much Love we put into giving.
+    but how much love we put into giving.
 """)
                 .font(.title3)
                 .multilineTextAlignment(.center)
@@ -43,17 +45,12 @@ struct OnboardingView: View {
                 // MARK: - CENTER
                 
                 ZStack {
-                    ZStack{
-                        Circle()
-                            .stroke(.white.opacity(0.2), lineWidth: 40.0)
-                            .frame(width: 260.0,height: 260.0, alignment: .center)
-                        Circle()
-                            .stroke(.white.opacity(0.2), lineWidth: 80.0)
-                            .frame(width: 260.0,height: 260.0, alignment: .center)
+                    CircleGroupView(ShapeColor: .white, ShapeOpacity: 0.2)
+                    
                         Image("character-1")
                             .resizable()
                             .scaledToFit()
-                    }
+                    
                 }
                 Spacer()
                 
